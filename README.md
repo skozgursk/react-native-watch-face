@@ -11,11 +11,12 @@
 
 To use **react-native-watch-face** in your React Native project, follow these steps:
 
-1. Add the following dependency to your `pubspec.yaml` file:
+1. Add the following dependency to your `package.json` file:
 
-   ```yaml
-   dependencies:
-     react-native-watch-face: ^0.0.1
+   ```json
+   "dependencies": {
+    "react-native-watch-face": "^0.0.1"
+   },
    ```
 2. Run npm install to fetch the package.
 
