@@ -1,8 +1,24 @@
 #import <React/RCTBridgeModule.h>
+#import <React/RCTConvert.h>
+
+@interface RCTConvert (CustomType)
+
++ (NSString *)NSString:(id)json;
+
+@end
+
+@implementation RCTConvert (CustomType)
+
++ (NSString *)NSString:(id)json
+{
+    return [NSString stringWithFormat:@"%@", json];
+}
+
+@end
 
 @interface RCT_EXTERN_MODULE(WatchFace, NSObject)
 
-RCT_EXTERN_METHOD(multiply:(float)a withB:(float)b
+RCT_EXTERN_METHOD(addWatchFace:(NSString *)path
                  withResolver:(RCTPromiseResolveBlock)resolve
                  withRejecter:(RCTPromiseRejectBlock)reject)
 

@@ -17,6 +17,6 @@ const WatchFace = NativeModules.WatchFace
       }
     );
 
-export function multiply(a: number, b: number): Promise<number> {
-  return WatchFace.multiply(a, b);
+export function addWatchFace(path: string): Promise<boolean> {
+  return WatchFace.addWatchFace(path);
 }
